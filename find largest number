@@ -1,0 +1,16 @@
+class lar1 {
+    public static int largest(int[] a){
+            int max = a[0]; 
+            for(int i=1; i<a.length; i++){
+               if(max<a[i]) {
+                max=a[i];
+               }
+        }
+        return max;
+    }
+public static void main(String[] args){
+    int[] a= {4,6,7,8,1};
+    int  result = largest(a);
+    System.out.println(result);
+}
+}
