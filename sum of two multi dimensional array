@@ -1,0 +1,39 @@
+import java.util.Scanner;
+class sumofmulti{
+    public static void main(String [] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the row size:");
+        int row = sc.nextInt();
+        System.out.println("enter the col size:");
+        int col = sc.nextInt();
+        System.out.println("enter the row2 size:");
+        int row2 = sc.nextInt();
+        System.out.println("enter the col2 size:");
+        int col2 = sc.nextInt();
+        int [][] c= new int[row][col];
+        int [] [] m= new int[row2][col2];
+        System.out.println("enter the elements:");
+        for(int i=0; i<c.length; i++){
+            for(int j=0; j<col; j++){
+                c[i][j] = sc.nextInt();
+            }
+        }
+        System.out.println("enter the second elements:");
+        for(int i=0; i<m.length; i++){
+            for(int j=0; j<col; j++){
+                m[i][j] = sc.nextInt();
+            }
+        }
+        if(c.length==m.length){
+        System.out.println("enter the sum of  matrix:");
+        for(int i=0; i<c.length; i++){
+            for(int j=0; j<col; j++){
+           int result = c[i][j] + m[i][j];
+           System.out.println(result + " ");
+            }
+        }
+    }
+        System.out.println();
+        sc.close();
+    }
+}
