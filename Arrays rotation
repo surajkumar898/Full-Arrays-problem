@@ -17,3 +17,5 @@ class main{
         System.out.println(Arrays.toString(result));
     }
 }
+I archieve array rotation by taking input array  followed by creating new array. asssigning my each index value to the new array here i archive rotation or shifting of
+elements by using the modulo operator. (i+k)%n) for each iteration i adding my index i value with k value  and i use modulo operator with my array length
